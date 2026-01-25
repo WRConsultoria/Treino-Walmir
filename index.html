@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="Light">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WR Consultoria - Principal</title>
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="./assets/imagem_icone1.png">
+  <link rel="icon" type="image/png" href="./assets/imagem_icone1.png">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="main-page">
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/logo-wr-3D.png" alt="Logo WR Consultoria" />
+      <p>Consultoria Online</p>
+      <p></p>
+      <h2>Walmir Correa</h2>
+    </div>
+
+    <!-- Botão para instalar o PWA (será exibido quando disponível) -->
+    <div id="installContainer" style="text-align:center; margin:12px 0;">
+      <button id="btnInstall" class="install-btn" style="display:none;">Instalar App</button>
+    </div>
+
+    <ul>
+      <!-- Links de navegação existentes -->
+      <!-- Botões e suas respectivas áreas de conteúdo -->
+
+      <button class="btn-toggle-content" data-target="pushday1Content">Push day 1</button>
+      <div id="pushday1Content" class="hidden-content">
+        <h4>buscar 1 rep antes da falha</h4>
+        <p>Executar 4 x 8 à 10 rep (45" rest)</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Supino reto</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Supino
+                    inclinado</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Desenvolvimento
+                    militar</button>
+                  <div class="exercise-video hidden">
+                    <iframe src=" " allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Elevação
+                    lateral</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Tríceps na
+                    polia</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Mergulho</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd oblíquo na polia
+                    baixa</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd máquina</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">25 min de esteira - 80%
+                    BPM</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-toggle-content" data-target="pullday1Content">Pull day 1</button>
+      <div id="pullday1Content" class="hidden-content">
+        <h4>buscar 1 rep antes da falha</h4>
+        <p>Executar 4 x 8 à 10 rep (45" rest)</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Puxada alta
+                    (PA)</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Remada curvada com
+                    barra</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Remada baixa
+                    (triângulo)</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca scott W</button>
+                  <div class="exercise-video hidden">
+                    <iframe src=" " allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca martelo</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Pull down
+                    (corda)</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">15 min de
+                    escada</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-toggle-content" data-target="legday1Content">Leg day 1</button>
+      <div id="legday1Content" class="hidden-content">
+        <h4>buscar 1 rep antes da falha</h4>
+        <p>Executar 4 x 8 à 10 rep (45" rest)</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Leg press</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">gemeos no leg
+                    press</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abdutora</button>
+                  <div class="exercise-video hidden">
+                    <iframe src=" " allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">adutora</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">cadeira flexora</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Cadeira
+                    extensora</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">25 min de esteira - 80%
+                    BPM</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-toggle-content" data-target="pushday2Content">Push day 2</button>
+      <div id="pushday2Content" class="hidden-content">
+        <h4>buscar 1 rep antes da falha</h4>
+        <p>Executar 4 x 8 à 10 rep (45" rest)</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo polia
+                    alta</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo polia
+                    baixa</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo polia
+                    média</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Desenvolvimento
+                    Arnold</button>
+                  <div class="exercise-video hidden">
+                    <iframe src=" " allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Elevação lateral +
+                    frontal</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Tríceps testa</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Tríceps corda na
+                    polia</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">15 min de
+                    escada</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-toggle-content" data-target="pullday2Content">Pull day 2</button>
+      <div id="pullday2Content" class="hidden-content">
+        <h4>buscar 1 rep antes da falha</h4>
+        <p>Executar 4 x 8 à 10 rep (45" rest)</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Puxada alta
+                    unilateral</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Remada serrote</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Pulldown</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo
+                    invertido</button>
+                  <div class="exercise-video hidden">
+                    <iframe src=" " allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca scott
+                    unilateral</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca unilateral na
+                    polia</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca martelo com
+                    corda</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">25 min de esteira - 80%
+                    BPM</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-toggle-content" data-target="legday2Content">Leg day 2</button>
+      <div id="legday2Content" class="hidden-content">
+        <h4>buscar 1 rep antes da falha</h4>
+        <p>Executar 4 x 8 à 10 rep (45" rest)</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Levantamento
+                    terra</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Agachamento
+                    livre</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Bi-set adutora +
+                    abdutora</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Cadeira
+                    extensora</button>
+                  <div class="exercise-video hidden">
+                    <iframe src=" " allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd infra no banco
+                    declinado</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd supra com DB no
+                    banco declinado</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd Twist</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">25 min de bike - 80%
+                    BPM</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <button class="btn-toggle-content" data-target="Bioimpedancia">Bioimpedancia</button>
+      <div id="Bioimpedancia" class="hidden-content">
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"><b>INDICADOR</b></th>
+              <th style="text-align:left;">01/10/25</th>
+              <th style="text-align:left;">24/11/25</th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Peso</td>
+              <td>86,4 Kg</td>
+              <td>84,2 Kg</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>PMassa Muscular Esquelética</td>
+              <td>36,8 Kg</td>
+              <td>86,6 Kg </td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Massa de Gordura</td>
+              <td>22 Kg</td>
+              <td>20,4 Kg</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Percentual de Gordura</td>
+              <td>25,4%</td>
+              <td>24,3%</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Circunferência da Cintura</td>
+              <td>95,4 cm</td>
+              <td>94,6 cm</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Gordura Visceral (nível)</td>
+              <td>8</td>
+              <td>8</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>IMC</td>
+              <td>30,6</td>
+              <td>29,8</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Pontuação InBody</td>
+              <td>81</td>
+              <td>82</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>TMB</td>
+              <td>1.762</td>
+              <td>1.747</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">1 de outubro</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="assets/exames/bioimpedancia_1_outubro_2025.png" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">24 de novembro</button>
+                  <div class="exercise-video hidden">
+                    <iframe src="assets/exames/bioimpedancia_24_novembro_2025.jpg" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn-toggle-content" data-target="Dieta">Dieta</button>
+      <div id="Dieta" class="hidden-content">
+        <h4>Cardápio diário</h4>
+        <p>~ 1.800</p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align:left;"><b></b></th>
+              <th style="text-align:left;"><b></b></th>
+              <th style="text-align:left;"><b></b></th>
+              <th style="text-align:left;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <tr>
+              <td><b>Café da manhã</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 1:</u></td>
+              <td><b></b></td>
+              <td><b>~300</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>pão de forma integral</td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Ovos + claras</td>
+              <td>1 + 5</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Cottage</td>
+              <td>40g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Lanche da manhã</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 1:</u></td>
+              <td><b></b></td>
+              <td><b>~200</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Iogurte desnatado</td>
+              <td>100g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Whey Protein</td>
+              <td>40g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Almoço</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 1:</u></td>
+              <td><b></b></td>
+              <td><b>~385</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Legumes e verduras</td>
+              <td>à vontade</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Arroz, batata, macarrão, mandioca ou abóbora </td>
+              <td>60 g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Tilápia</td>
+              <td>180g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ou omelete 2 ovos + 3 claras</td>
+              <td>2 + 3</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Feijão, ervilha, lentilha ou gão de bico</td>
+              <td>50g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Lanche da tarde</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 1:</u></td>
+              <td><b></b></td>
+              <td><b>~250</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>frutas</td>
+              <td>100g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Iogurte desnatado</td>
+              <td>100g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Whey Protein</td>
+              <td>40g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Jantar</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 1:</u></td>
+              <td><b></b></td>
+              <td><b>~546</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Legumes e verduras</td>
+              <td>à vontade</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Arroz, batata, macarrão, mandioca ou abóbora </td>
+              <td>80 g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Tilápia</td>
+              <td>160g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Feijão, ervilha, lentilha ou gão de bico</td>
+              <td>50g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 2:</u></td>
+              <td><b></b></td>
+              <td><b>~485</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Legumes e verduras</td>
+              <td>à vontade</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Arroz, batata, macarrão, mandioca ou abóbora </td>
+              <td>80 g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Omelete 1 ovos + 5 claras</td>
+              <td>1 + 5</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Feijão, ervilha, lentilha ou gão de bico</td>
+              <td>50g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Ceia</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td><u>Opção 1:</u></td>
+              <td><b></b></td>
+              <td><b>~250</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>frutas</td>
+              <td>100g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Iogurte desnatado</td>
+              <td>100g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Whey Protein</td>
+              <td>40g</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Hidratação</b></td>
+              <td><b></b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>4 litros</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <tr>
+              <td><b>Refeição Livre</b></td>
+              <td><b></b></td>
+              <td><input type="checkbox" class="checkin"></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ALIMENTO</td>
+              <td>QTDE</td>
+              <td>KCAL</td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Pizza Fatia</td>
+              <td>2</td>
+              <td><b>~560</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ou</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>chocolate pedaço</td>
+              <td>3</td>
+              <td><b>~150</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>ou</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>pastel</td>
+              <td>1</td>
+              <td><b>~400</b></td>
+              <td></td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Escolher uma das refeições para poder trocar neste dia (café da manha, almoço ou jantar)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </li>
+    </ul>
+
+    <div id="social-links">
+      <a href="https://www.instagram.com/personal_walmir_rezende" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.youtube.com/@walmirrezende" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+      <a href="https://wa.me/5511933444385" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
